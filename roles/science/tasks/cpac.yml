@@ -8,7 +8,7 @@
 
 # Install pipx
 - name: Install pipx
-  ansible.builtin.apt:
+  ansible.builtin.pacman:
     update_cache: yes
     state: present
     autoclean: yes

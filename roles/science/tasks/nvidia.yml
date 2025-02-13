@@ -8,7 +8,7 @@
     - /opt/quarantine/software/cuda/12.3.1/src
 
 - name: Install nvidia development dependencies
-  ansible.builtin.apt:
+  ansible.builtin.pacman:
     update_cache: yes
     state: present
     autoclean: yes
